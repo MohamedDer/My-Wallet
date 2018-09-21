@@ -1,0 +1,15 @@
+PODS:
+  - IQKeyboardManager (6.0.4)
+  - JVFloatLabeledTextField (1.2.1)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - JVFloatLabeledTextField
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 29514134ef0334a6fa33cf4eee11c36c064baeaf
+  JVFloatLabeledTextField: cfc44e3c4d493b2ed92ede8035e8e89c2912ba64
+
+PODFILE CHECKSUM: 6d62efb81eb8d629d336cf8a29731bacc5dcc690
+
+COCOAPODS: 1.4.0

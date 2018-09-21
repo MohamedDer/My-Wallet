@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60D544FBE7DEB9582047C484 /* Pods_My_Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D57739F2FF4A639FD2E263 /* Pods_My_Wallet.framework */; };
 		63359DCE2154F40700520A65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63359DCD2154F40700520A65 /* AppDelegate.swift */; };
 		63359DD02154F40700520A65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63359DCF2154F40700520A65 /* ViewController.swift */; };
 		63359DD32154F40700520A65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63359DD12154F40700520A65 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D13EF7FC5F5A94D3FA342BD /* Pods-My Wallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Wallet.release.xcconfig"; path = "Pods/Target Support Files/Pods-My Wallet/Pods-My Wallet.release.xcconfig"; sourceTree = "<group>"; };
+		60D57739F2FF4A639FD2E263 /* Pods_My_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63359DCA2154F40700520A65 /* My Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63359DCD2154F40700520A65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63359DCF2154F40700520A65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		63359DD42154F40800520A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63359DD72154F40800520A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63359DD92154F40800520A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE0518F0B49C4390F706263 /* Pods-My Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Wallet/Pods-My Wallet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D544FBE7DEB9582047C484 /* Pods_My_Wallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31AB28771734F87B305AEFE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAE0518F0B49C4390F706263 /* Pods-My Wallet.debug.xcconfig */,
+				0D13EF7FC5F5A94D3FA342BD /* Pods-My Wallet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		63359DC12154F40700520A65 = {
 			isa = PBXGroup;
 			children = (
 				63359DCC2154F40700520A65 /* My Wallet */,
 				63359DCB2154F40700520A65 /* Products */,
+				31AB28771734F87B305AEFE6 /* Pods */,
+				765BF72E46889342CFBA78D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = "My Wallet";
 			sourceTree = "<group>";
 		};
+		765BF72E46889342CFBA78D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60D57739F2FF4A639FD2E263 /* Pods_My_Wallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63359DDC2154F40800520A65 /* Build configuration list for PBXNativeTarget "My Wallet" */;
 			buildPhases = (
+				5B224448B20165185F05CB0B /* [CP] Check Pods Manifest.lock */,
 				63359DC62154F40700520A65 /* Sources */,
 				63359DC72154F40700520A65 /* Frameworks */,
 				63359DC82154F40700520A65 /* Resources */,
+				384D61B981E8C32E58B1F6D1 /* [CP] Embed Pods Frameworks */,
+				C1A4456F7FAA434FD4DE697E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		384D61B981E8C32E58B1F6D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-My Wallet/Pods-My Wallet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JVFloatLabeledTextField.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Wallet/Pods-My Wallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B224448B20165185F05CB0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My Wallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1A4456F7FAA434FD4DE697E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My Wallet/Pods-My Wallet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63359DC62154F40700520A65 /* Sources */ = {
@@ -280,15 +363,13 @@
 		};
 		63359DDD2154F40800520A65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE0518F0B49C4390F706263 /* Pods-My Wallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7P43UR5T5;
 				INFOPLIST_FILE = "My Wallet/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "medder.My-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -298,15 +379,13 @@
 		};
 		63359DDE2154F40800520A65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D13EF7FC5F5A94D3FA342BD /* Pods-My Wallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7P43UR5T5;
 				INFOPLIST_FILE = "My Wallet/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "medder.My-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

@@ -8,13 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
+    @IBOutlet weak var alphaView: UIView!
+    @IBOutlet weak var loginButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        alphaView.layer.cornerRadius = 15.0
+        loginButton.layer.cornerRadius = 10.0
+
+
     }
 
-
+    @IBAction func didClickLogin(_ sender: Any) {
+    }
+    
 }
 
