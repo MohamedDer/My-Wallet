@@ -9,6 +9,7 @@ target 'My Wallet' do
 
 	pod 'JVFloatLabeledTextField'
 	pod 'IQKeyboardManager'
+	pod 'NVActivityIndicatorView'
 
 
 

@@ -1,15 +1,20 @@
 PODS:
-  - IQKeyboardManager (6.0.4)
+  - IQKeyboardManager (6.1.1)
   - JVFloatLabeledTextField (1.2.1)
+  - NVActivityIndicatorView (4.4.0):
+    - NVActivityIndicatorView/Presenter (= 4.4.0)
+  - NVActivityIndicatorView/Presenter (4.4.0)
 
 DEPENDENCIES:
   - IQKeyboardManager
   - JVFloatLabeledTextField
+  - NVActivityIndicatorView
 
 SPEC CHECKSUMS:
-  IQKeyboardManager: 29514134ef0334a6fa33cf4eee11c36c064baeaf
+  IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   JVFloatLabeledTextField: cfc44e3c4d493b2ed92ede8035e8e89c2912ba64
+  NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
 
-PODFILE CHECKSUM: 6d62efb81eb8d629d336cf8a29731bacc5dcc690
+PODFILE CHECKSUM: f7aa10b0f340fee7c477b49b5887a5172578e3df
 
 COCOAPODS: 1.4.0
