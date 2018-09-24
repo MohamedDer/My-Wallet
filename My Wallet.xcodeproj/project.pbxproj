@@ -14,6 +14,8 @@
 		63359DD52154F40800520A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63359DD42154F40800520A65 /* Assets.xcassets */; };
 		63359DD82154F40800520A65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63359DD62154F40800520A65 /* LaunchScreen.storyboard */; };
 		637892392158FEEE00513D84 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637892382158FEEE00513D84 /* SignUpViewController.swift */; };
+		6378923B21593C0200513D84 /* SignUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6378923A21593C0200513D84 /* SignUpForm.swift */; };
+		6378924021593CC200513D84 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6378923F21593CC200513D84 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		63359DD72154F40800520A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63359DD92154F40800520A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		637892382158FEEE00513D84 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		6378923A21593C0200513D84 /* SignUpForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpForm.swift; sourceTree = "<group>"; };
+		6378923F21593CC200513D84 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CAE0518F0B49C4390F706263 /* Pods-My Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Wallet/Pods-My Wallet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,8 +76,9 @@
 		63359DCC2154F40700520A65 /* My Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				6378923E21593C9F00513D84 /* Models */,
 				63359DCD2154F40700520A65 /* AppDelegate.swift */,
-				63359DDF21553B1100520A65 /* Login Singup */,
+				63359DDF21553B1100520A65 /* Login Singup Management */,
 				63359DD12154F40700520A65 /* Main.storyboard */,
 				63359DD42154F40800520A65 /* Assets.xcassets */,
 				63359DD62154F40800520A65 /* LaunchScreen.storyboard */,
@@ -82,13 +87,38 @@
 			path = "My Wallet";
 			sourceTree = "<group>";
 		};
-		63359DDF21553B1100520A65 /* Login Singup */ = {
+		63359DDF21553B1100520A65 /* Login Singup Management */ = {
+			isa = PBXGroup;
+			children = (
+				6378923D21593C1700513D84 /* Sign Up */,
+				6378923C21593C0900513D84 /* Login */,
+			);
+			path = "Login Singup Management";
+			sourceTree = "<group>";
+		};
+		6378923C21593C0900513D84 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				63359DCF2154F40700520A65 /* LoginViewController.swift */,
-				637892382158FEEE00513D84 /* SignUpViewController.swift */,
 			);
-			path = "Login Singup";
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6378923D21593C1700513D84 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				637892382158FEEE00513D84 /* SignUpViewController.swift */,
+				6378923A21593C0200513D84 /* SignUpForm.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		6378923E21593C9F00513D84 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6378923F21593CC200513D84 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		765BF72E46889342CFBA78D4 /* Frameworks */ = {
@@ -232,7 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				637892392158FEEE00513D84 /* SignUpViewController.swift in Sources */,
+				6378923B21593C0200513D84 /* SignUpForm.swift in Sources */,
 				63359DD02154F40700520A65 /* LoginViewController.swift in Sources */,
+				6378924021593CC200513D84 /* User.swift in Sources */,
 				63359DCE2154F40700520A65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,6 +25,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.isTranslucent = false
 
         IQKeyboardManager.shared().shouldResignOnTouchOutside = true
         
