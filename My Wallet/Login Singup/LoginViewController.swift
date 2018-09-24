@@ -38,7 +38,6 @@ class LoginViewController: UIViewController {
         loginTextField.delegate = self
         passwordTextField.delegate = self
 
-
     }
 
     @IBAction func didClickLogin(_ sender: Any) {
@@ -59,6 +58,7 @@ class LoginViewController: UIViewController {
     func checkLoginFields() -> Bool{
          return loginTextField.text?.count == 2 && passwordTextField.text?.count == 2
       }
+    
     func startSpinner(){
         IQKeyboardManager.shared().resignFirstResponder()
         
@@ -74,17 +74,11 @@ class LoginViewController: UIViewController {
 
         self.view.addSubview(containerView)
         spinnerView.startAnimating()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5) {
-            NVActivityIndicatorPresenter.sharedInstance.setMessage("Authenticating...")
-        }
-        
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
             spinnerView.stopAnimating()
             containerView.removeFromSuperview()
         }
-
     }
-    
 }
 
 extension LoginViewController: UITextFieldDelegate {
