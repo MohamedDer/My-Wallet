@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		60D544FBE7DEB9582047C484 /* Pods_My_Wallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D57739F2FF4A639FD2E263 /* Pods_My_Wallet.framework */; };
 		63359DCE2154F40700520A65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63359DCD2154F40700520A65 /* AppDelegate.swift */; };
-		63359DD02154F40700520A65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63359DCF2154F40700520A65 /* ViewController.swift */; };
+		63359DD02154F40700520A65 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63359DCF2154F40700520A65 /* LoginViewController.swift */; };
 		63359DD32154F40700520A65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63359DD12154F40700520A65 /* Main.storyboard */; };
 		63359DD52154F40800520A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63359DD42154F40800520A65 /* Assets.xcassets */; };
 		63359DD82154F40800520A65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63359DD62154F40800520A65 /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		60D57739F2FF4A639FD2E263 /* Pods_My_Wallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Wallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63359DCA2154F40700520A65 /* My Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63359DCD2154F40700520A65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63359DCF2154F40700520A65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63359DCF2154F40700520A65 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		63359DD22154F40700520A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63359DD42154F40800520A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63359DD72154F40800520A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,13 +71,21 @@
 			isa = PBXGroup;
 			children = (
 				63359DCD2154F40700520A65 /* AppDelegate.swift */,
-				63359DCF2154F40700520A65 /* ViewController.swift */,
+				63359DDF21553B1100520A65 /* Login Singup */,
 				63359DD12154F40700520A65 /* Main.storyboard */,
 				63359DD42154F40800520A65 /* Assets.xcassets */,
 				63359DD62154F40800520A65 /* LaunchScreen.storyboard */,
 				63359DD92154F40800520A65 /* Info.plist */,
 			);
 			path = "My Wallet";
+			sourceTree = "<group>";
+		};
+		63359DDF21553B1100520A65 /* Login Singup */ = {
+			isa = PBXGroup;
+			children = (
+				63359DCF2154F40700520A65 /* LoginViewController.swift */,
+			);
+			path = "Login Singup";
 			sourceTree = "<group>";
 		};
 		765BF72E46889342CFBA78D4 /* Frameworks */ = {
@@ -218,7 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63359DD02154F40700520A65 /* ViewController.swift in Sources */,
+				63359DD02154F40700520A65 /* LoginViewController.swift in Sources */,
 				63359DCE2154F40700520A65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,7 +377,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7P43UR5T5;
 				INFOPLIST_FILE = "My Wallet/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "medder.My-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -385,7 +396,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7P43UR5T5;
 				INFOPLIST_FILE = "My Wallet/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "medder.My-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
