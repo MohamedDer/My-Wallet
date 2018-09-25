@@ -226,7 +226,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                             <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMp-LF-8fN">
-                                <rect key="frame" x="20" y="30" width="335" height="505.5"/>
+                                <rect key="frame" x="20" y="30" width="335" height="573.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dbm-zO-4d1">
                                         <rect key="frame" x="47.5" y="20" width="240" height="110"/>
@@ -235,10 +235,18 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Dl2-fY-3NR">
-                                        <rect key="frame" x="20" y="174" width="295" height="306.5"/>
+                                        <rect key="frame" x="20" y="174" width="295" height="347.5"/>
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to B Wallet " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mae-Ub-wcq">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="28"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="22"/>
+                                                <color key="textColor" red="0.89019607840000003" green="0.3411764706" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="0.85596578919999999" green="0.85897446089999996" blue="0.86800047589999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <size key="shadowOffset" width="0.5" height="1.5"/>
+                                            </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Civility" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vpm-jz-cdQ" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="0.0" y="0.0" width="295" height="36"/>
+                                                <rect key="frame" x="0.0" y="41" width="295" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="fNy-Fi-KkP"/>
                                                 </constraints>
@@ -258,7 +266,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FAi-yF-RQZ" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="0.0" y="49" width="295" height="36"/>
+                                                <rect key="frame" x="0.0" y="90" width="295" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="SrK-qv-OGJ"/>
                                                 </constraints>
@@ -278,7 +286,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GE1-Ef-FFt" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="0.0" y="98" width="295" height="36"/>
+                                                <rect key="frame" x="0.0" y="139" width="295" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="wyI-gu-h9P"/>
                                                 </constraints>
@@ -298,7 +306,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VvB-o7-h0W" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="0.0" y="147" width="295" height="36"/>
+                                                <rect key="frame" x="0.0" y="188" width="295" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="olj-Kk-waY"/>
                                                 </constraints>
@@ -318,7 +326,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2h-h4-laB" customClass="JVFloatLabeledTextField">
-                                                <rect key="frame" x="0.0" y="196" width="295" height="36"/>
+                                                <rect key="frame" x="0.0" y="237" width="295" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="NV0-8q-zHx"/>
                                                 </constraints>
@@ -338,13 +346,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Limit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmn-hd-9Qc">
-                                                <rect key="frame" x="0.0" y="245" width="295" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="286" width="295" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.89019607840000003" green="0.3411764706" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="0P1-Xg-K9H">
-                                                <rect key="frame" x="0.0" y="278.5" width="295" height="29"/>
+                                                <rect key="frame" x="0.0" y="319.5" width="295" height="29"/>
                                                 <segments>
                                                     <segment title="200 DH"/>
                                                     <segment title="5 000 DH"/>
