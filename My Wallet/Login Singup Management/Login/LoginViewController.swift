@@ -25,8 +25,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController?.navigationBar.isTranslucent = false
 
         IQKeyboardManager.shared().shouldResignOnTouchOutside = true
         
@@ -45,7 +43,7 @@ class LoginViewController: UIViewController {
     @IBAction func didClickLogin(_ sender: Any) {
         if checkLoginFields(){
             startSpinner()
-            // serverAPI.loginWithCreditentials()
+            // yourServerAPI.loginWithCreditentials()
         } else {
             let alertController = UIAlertController(title: "Login Error", message:
                 "Please check your creditentials !", preferredStyle: UIAlertController.Style.alert)
@@ -58,21 +56,21 @@ class LoginViewController: UIViewController {
     }
     
     func checkLoginFields() -> Bool{
-         return loginTextField.text?.count == 2 && passwordTextField.text?.count == 2
+         return loginTextField.text?.count == 10 && passwordTextField.text?.count == 6
       }
     
     func startSpinner(){
         IQKeyboardManager.shared().resignFirstResponder()
         
-        let containerView = UIView(frame: self.view.frame)
+        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
         containerView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
 
         let frame = CGRect(x: self.view.frame.maxX/2 - 45, y: self.view.frame.maxY/2 - 45, width: 90, height: 90)
         let spinnerView = NVActivityIndicatorView(frame: frame, type: NVActivityIndicatorType(rawValue: 22), color: UIColor.yellow, padding: 2.4)
         
         containerView.addSubview(spinnerView)
-        containerView.centerXAnchor.constraint(equalToSystemSpacingAfter: containerView.centerXAnchor, multiplier: 1)
-        containerView.centerYAnchor.constraint(equalToSystemSpacingBelow: containerView.centerYAnchor, multiplier: 1)
+        containerView.centerXAnchor.constraint(equalToSystemSpacingAfter: self.view.centerXAnchor, multiplier: 1)
+        containerView.centerYAnchor.constraint(equalToSystemSpacingBelow: self.view.centerYAnchor, multiplier: 1)
 
         self.view.addSubview(containerView)
         spinnerView.startAnimating()

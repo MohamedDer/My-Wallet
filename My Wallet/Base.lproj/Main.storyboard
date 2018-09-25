@@ -41,7 +41,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M15-eY-zSb" userLabel="phoneNumber">
                                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="17"/>
                                                                 <subviews>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G87-zh-EWC" customClass="JVFloatLabeledTextField">
+                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="G87-zh-EWC" customClass="JVFloatLabeledTextField">
                                                                         <rect key="frame" x="0.0" y="0.0" width="280" height="16"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="V5g-7h-2hk"/>
@@ -70,7 +70,7 @@
                                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5Gl-dr-plQ" userLabel="password">
                                                                 <rect key="frame" x="0.0" y="31" width="280" height="17"/>
                                                                 <subviews>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="1000" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ebm-0E-Are" customClass="JVFloatLabeledTextField">
+                                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="1000" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ebm-0E-Are" customClass="JVFloatLabeledTextField">
                                                                         <rect key="frame" x="0.0" y="0.0" width="280" height="16"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="cx8-wx-Exl"/>
@@ -98,7 +98,7 @@
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <view contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Qmg-Gz-lla">
+                                                    <view contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="247" verticalCompressionResistancePriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="Qmg-Gz-lla">
                                                         <rect key="frame" x="22.5" y="53" width="280" height="52"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
@@ -223,7 +223,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Kyc-xy-xQb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="539"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                             </imageView>
                             <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FMp-LF-8fN">
                                 <rect key="frame" x="20" y="30" width="335" height="505.5"/>
