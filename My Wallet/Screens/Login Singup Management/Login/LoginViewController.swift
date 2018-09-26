@@ -26,6 +26,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        
         IQKeyboardManager.shared().shouldResignOnTouchOutside = true
         
         alphaView.layer.cornerRadius = 15.0
@@ -43,6 +46,7 @@ class LoginViewController: UIViewController {
     @IBAction func didClickLogin(_ sender: Any) {
         if checkLoginFields(){
             startSpinner()
+            gotoDashboard()
             // yourServerAPI.loginWithCreditentials()
         } else {
             let alertController = UIAlertController(title: "Login Error", message:
@@ -56,7 +60,7 @@ class LoginViewController: UIViewController {
     }
     
     func checkLoginFields() -> Bool{
-         return loginTextField.text?.count == 10 && passwordTextField.text?.count == 6
+         return loginTextField.text?.count == 2 && passwordTextField.text?.count == 2
       }
     
     func startSpinner(){
@@ -74,11 +78,18 @@ class LoginViewController: UIViewController {
 
         self.view.addSubview(containerView)
         spinnerView.startAnimating()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
             spinnerView.stopAnimating()
             containerView.removeFromSuperview()
         }
     }
+    
+    func gotoDashboard() {
+        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let vc = storyboard.instantiateInitialViewController()
+        self.navigationController!.present(vc!, animated: true, completion: nil)
+    }
+    
 }
 
 extension LoginViewController: UITextFieldDelegate {
