@@ -13,9 +13,13 @@
 		63359DD32154F40700520A65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63359DD12154F40700520A65 /* Main.storyboard */; };
 		63359DD52154F40800520A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63359DD42154F40800520A65 /* Assets.xcassets */; };
 		63359DD82154F40800520A65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63359DD62154F40800520A65 /* LaunchScreen.storyboard */; };
+		63776BBC215A723E003D4F41 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63776BBB215A723E003D4F41 /* Dashboard.storyboard */; };
+		63776BBE215A72AE003D4F41 /* dashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63776BBD215A72AE003D4F41 /* dashboardViewController.swift */; };
+		63776BC1215A8A9E003D4F41 /* iconCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63776BC0215A8A9E003D4F41 /* iconCollectionViewCell.swift */; };
 		637892392158FEEE00513D84 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637892382158FEEE00513D84 /* SignUpViewController.swift */; };
 		6378923B21593C0200513D84 /* SignUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6378923A21593C0200513D84 /* SignUpForm.swift */; };
 		6378924021593CC200513D84 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6378923F21593CC200513D84 /* User.swift */; };
+		63952B17215BD50500635935 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63952B16215BD50500635935 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +32,13 @@
 		63359DD42154F40800520A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63359DD72154F40800520A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63359DD92154F40800520A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63776BBB215A723E003D4F41 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		63776BBD215A72AE003D4F41 /* dashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashboardViewController.swift; sourceTree = "<group>"; };
+		63776BC0215A8A9E003D4F41 /* iconCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconCollectionViewCell.swift; sourceTree = "<group>"; };
 		637892382158FEEE00513D84 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		6378923A21593C0200513D84 /* SignUpForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpForm.swift; sourceTree = "<group>"; };
 		6378923F21593CC200513D84 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		63952B16215BD50500635935 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		CAE0518F0B49C4390F706263 /* Pods-My Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Wallet/Pods-My Wallet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,11 +84,12 @@
 		63359DCC2154F40700520A65 /* My Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				63776BBF215A8A70003D4F41 /* Reusable Views */,
+				63952B14215BD29C00635935 /* Screens */,
 				6378923E21593C9F00513D84 /* Models */,
-				63359DCD2154F40700520A65 /* AppDelegate.swift */,
-				63359DDF21553B1100520A65 /* Login Singup Management */,
 				63359DD12154F40700520A65 /* Main.storyboard */,
 				63359DD42154F40800520A65 /* Assets.xcassets */,
+				63359DCD2154F40700520A65 /* AppDelegate.swift */,
 				63359DD62154F40800520A65 /* LaunchScreen.storyboard */,
 				63359DD92154F40800520A65 /* Info.plist */,
 			);
@@ -94,6 +103,23 @@
 				6378923C21593C0900513D84 /* Login */,
 			);
 			path = "Login Singup Management";
+			sourceTree = "<group>";
+		};
+		63776BBA215A7222003D4F41 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				63776BBB215A723E003D4F41 /* Dashboard.storyboard */,
+				63776BBD215A72AE003D4F41 /* dashboardViewController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		63776BBF215A8A70003D4F41 /* Reusable Views */ = {
+			isa = PBXGroup;
+			children = (
+				63776BC0215A8A9E003D4F41 /* iconCollectionViewCell.swift */,
+			);
+			path = "Reusable Views";
 			sourceTree = "<group>";
 		};
 		6378923C21593C0900513D84 /* Login */ = {
@@ -119,6 +145,24 @@
 				6378923F21593CC200513D84 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		63952B14215BD29C00635935 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				63952B15215BD2CB00635935 /* Settings */,
+				63359DDF21553B1100520A65 /* Login Singup Management */,
+				63776BBA215A7222003D4F41 /* Dashboard */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		63952B15215BD2CB00635935 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				63952B16215BD50500635935 /* SettingsViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		765BF72E46889342CFBA78D4 /* Frameworks */ = {
@@ -193,6 +237,7 @@
 				63359DD82154F40800520A65 /* LaunchScreen.storyboard in Resources */,
 				63359DD52154F40800520A65 /* Assets.xcassets in Resources */,
 				63359DD32154F40700520A65 /* Main.storyboard in Resources */,
+				63776BBC215A723E003D4F41 /* Dashboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				637892392158FEEE00513D84 /* SignUpViewController.swift in Sources */,
+				63776BBE215A72AE003D4F41 /* dashboardViewController.swift in Sources */,
+				63776BC1215A8A9E003D4F41 /* iconCollectionViewCell.swift in Sources */,
 				6378923B21593C0200513D84 /* SignUpForm.swift in Sources */,
 				63359DD02154F40700520A65 /* LoginViewController.swift in Sources */,
 				6378924021593CC200513D84 /* User.swift in Sources */,
 				63359DCE2154F40700520A65 /* AppDelegate.swift in Sources */,
+				63952B17215BD50500635935 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
