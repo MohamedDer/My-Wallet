@@ -20,6 +20,7 @@
 		6378923B21593C0200513D84 /* SignUpForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6378923A21593C0200513D84 /* SignUpForm.swift */; };
 		6378924021593CC200513D84 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6378923F21593CC200513D84 /* User.swift */; };
 		63952B17215BD50500635935 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63952B16215BD50500635935 /* SettingsViewController.swift */; };
+		63952B19215BF40100635935 /* transactiontableViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63952B18215BF40100635935 /* transactiontableViewCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		6378923A21593C0200513D84 /* SignUpForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpForm.swift; sourceTree = "<group>"; };
 		6378923F21593CC200513D84 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		63952B16215BD50500635935 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		63952B18215BF40100635935 /* transactiontableViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transactiontableViewCellTableViewCell.swift; sourceTree = "<group>"; };
 		CAE0518F0B49C4390F706263 /* Pods-My Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Wallet/Pods-My Wallet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				63776BC0215A8A9E003D4F41 /* iconCollectionViewCell.swift */,
+				63952B18215BF40100635935 /* transactiontableViewCellTableViewCell.swift */,
 			);
 			path = "Reusable Views";
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			files = (
 				637892392158FEEE00513D84 /* SignUpViewController.swift in Sources */,
 				63776BBE215A72AE003D4F41 /* dashboardViewController.swift in Sources */,
+				63952B19215BF40100635935 /* transactiontableViewCellTableViewCell.swift in Sources */,
 				63776BC1215A8A9E003D4F41 /* iconCollectionViewCell.swift in Sources */,
 				6378923B21593C0200513D84 /* SignUpForm.swift in Sources */,
 				63359DD02154F40700520A65 /* LoginViewController.swift in Sources */,

@@ -8,11 +8,11 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var ovalView: UIView!
     @IBOutlet weak var profileImage: UIImageView!
-    
+    @IBOutlet weak var transactionsTableView: UITableView!
     
     
     override func viewDidLoad() {
@@ -34,16 +34,29 @@ class SettingsViewController: UIViewController {
         ovalView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         ovalView.layer.cornerRadius = ovalView.frame.width/6
         ovalView.layer.insertSublayer(gradient, at: 0)
-
-        
-        
         
         profileImage.layer.cornerRadius = profileImage.frame.width/2
-        
-        
-        
     }
     
 
-
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let demoCell = tableView.dequeueReusableCell(withIdentifier: "transactionCell", for: indexPath) as! transactiontableViewCellTableViewCell
+            demoCell.mainView.layer.cornerRadius = 10
+            demoCell.userImage.layer.cornerRadius = 10
+            demoCell.userImage.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        return demoCell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
+    }
+    
 }
