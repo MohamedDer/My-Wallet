@@ -12,7 +12,7 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
 
     
     @IBOutlet weak var ovalView: UIView!
-    @IBOutlet weak var profileImageView: UIView!
+    @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var balanceLabel: UILabel!
     @IBOutlet weak var menuCollectionView: UICollectionView!
