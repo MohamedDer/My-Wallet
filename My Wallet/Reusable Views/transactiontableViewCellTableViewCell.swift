@@ -12,6 +12,7 @@ class transactiontableViewCellTableViewCell: UITableViewCell {
     
     @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var userImage: UIImageView!
+    @IBOutlet weak var imageBackgroundView: UIView!
     
 
     override func awakeFromNib() {
@@ -25,4 +26,14 @@ class transactiontableViewCellTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func configureBorders() -> Void {
+        self.mainView.layer.borderWidth = 0.5
+        self.mainView.layer.borderColor = UIColor(hex: "F7D45B").cgColor
+        self.mainView.layer.cornerRadius = 10
+        self.mainView.layer.masksToBounds = true
+        self.mainView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
+        
+        self.imageBackgroundView.layer.cornerRadius = 10
+        self.imageBackgroundView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+    }
 }

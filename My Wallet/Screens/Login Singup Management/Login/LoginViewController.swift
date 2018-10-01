@@ -10,6 +10,7 @@ import UIKit
 import IQKeyboardManager
 import JVFloatLabeledTextField
 import NVActivityIndicatorView
+import RealmSwift
 
 class LoginViewController: UIViewController {
     
@@ -21,15 +22,17 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var forgotPasswordButton: UIButton!
     @IBOutlet weak var loginTextField: JVFloatLabeledTextField!
     @IBOutlet weak var passwordTextField: JVFloatLabeledTextField!
+    var spview: SpinnerView?
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.spview = SpinnerView(parentView: self.view)
 
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        
-        IQKeyboardManager.shared().shouldResignOnTouchOutside = true
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+//        self.navigationController?.isNavigationBarHidden = true
         
         alphaView.layer.cornerRadius = 15.0
         bottomAlphaView.clipsToBounds = true
@@ -38,50 +41,39 @@ class LoginViewController: UIViewController {
         loginButton.layer.cornerRadius = 10.0
         signUpButton.layer.cornerRadius = 10.0
         
+        IQKeyboardManager.shared().shouldResignOnTouchOutside = true
+        
         loginTextField.delegate = self
         passwordTextField.delegate = self
 
     }
 
     @IBAction func didClickLogin(_ sender: Any) {
-        if checkLoginFields(){
-            startSpinner()
-            gotoDashboard()
-            // yourServerAPI.loginWithCreditentials()
-        } else {
-            let alertController = UIAlertController(title: "Login Error", message:
-                "Please check your creditentials !", preferredStyle: UIAlertController.Style.alert)
-            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default,handler: nil))
-            self.present(alertController, animated: true, completion: nil)
+        /* TO DO :  There must be a login presenter - to handle spinner loader and make api call-, login UseCase -to manage the
+         *network calls
+         */
+        spview?.startAnimating()
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            self.spview?.stopAnimating()
+            if self.checkLoginFields(){
+                self.gotoDashboard()
+            } else {
+                let alertController = UIAlertController(title: "Login Error", message:
+                    "Please check your creditentials !", preferredStyle: UIAlertController.Style.alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.default,handler: nil))
+                self.present(alertController, animated: true, completion: nil)
+            }
         }
     }
     
-    @IBAction func didClickForgotPassword(_ sender: Any) {
-    }
+    /*
+     *Check login should be in the presenter/use case and gotoDashboard in the router :)
+     *I use 2 characters in login/password just to make it fast for me to test :}
+     */
     
     func checkLoginFields() -> Bool{
-         return loginTextField.text?.count == 2 && passwordTextField.text?.count == 2
-      }
-    
-    func startSpinner(){
-        IQKeyboardManager.shared().resignFirstResponder()
-        
-        let containerView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
-        containerView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
-
-        let frame = CGRect(x: self.view.frame.maxX/2 - 45, y: self.view.frame.maxY/2 - 45, width: 90, height: 90)
-        let spinnerView = NVActivityIndicatorView(frame: frame, type: NVActivityIndicatorType(rawValue: 22), color: UIColor.yellow, padding: 2.4)
-        
-        containerView.addSubview(spinnerView)
-        containerView.centerXAnchor.constraint(equalToSystemSpacingAfter: self.view.centerXAnchor, multiplier: 1)
-        containerView.centerYAnchor.constraint(equalToSystemSpacingBelow: self.view.centerYAnchor, multiplier: 1)
-
-        self.view.addSubview(containerView)
-        spinnerView.startAnimating()
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
-            spinnerView.stopAnimating()
-            containerView.removeFromSuperview()
-        }
+        return loginTextField.text?.count == 2 && passwordTextField.text?.count == 2
     }
     
     func gotoDashboard() {
@@ -90,6 +82,8 @@ class LoginViewController: UIViewController {
         self.navigationController!.present(vc!, animated: true, completion: nil)
     }
     
+    @IBAction func didClickForgotPassword(_ sender: Any) {
+    }
 }
 
 extension LoginViewController: UITextFieldDelegate {
