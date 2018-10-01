@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import Alamofire
+
+
+
+class LoginUseCase: LogingUseCaseProtocol {
+    func loginWithCreditentials(phone: String, Password: String) -> Bool{
+        return true
+    }
+    
+    
+}
+
+
+
+protocol LogingUseCaseProtocol {
+    func loginWithCreditentials(phone: String, Password: String) -> Bool
+}
