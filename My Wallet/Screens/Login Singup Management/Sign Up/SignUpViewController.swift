@@ -55,12 +55,12 @@ class SignUpViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     
     @IBAction func didClickDone(_ sender: Any) {
-        let civ = civility.mr//civilityTextField.text
+        let civ = User.civility.mr//civilityTextField.text
         let firstName = firstNameTextField.text
         let lastName = lastNameTextField.text
         let phoneNumber = phoneNumberTextField.text
         let email = emailTextField.text
-        let accountLim = accountLimit.min  //accountLimitSegControl.selectedSegmentIndex
+        let accountLim = User.accountLimit.min  //accountLimitSegControl.selectedSegmentIndex
         
         let newUser = User(civility: civ, firstName: firstName, lastName: lastName, email: email, phoneNumber: phoneNumber, accountLimit: accountLim)
         if !newUser.validate().isEmpty{

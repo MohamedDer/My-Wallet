@@ -21,7 +21,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.tintColor = UIColor.white
-        
+
         ovalView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor).isActive = true
         
         let gradient = CAGradientLayer()
@@ -49,9 +49,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let demoCell = tableView.dequeueReusableCell(withIdentifier: "transactionCell", for: indexPath) as! transactiontableViewCellTableViewCell
-            demoCell.mainView.layer.cornerRadius = 10
-            demoCell.userImage.layer.cornerRadius = 10
-            demoCell.userImage.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+        demoCell.configureBorders()
         return demoCell
     }
     
@@ -59,4 +57,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         return 10
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return UIView()
+    }
 }
