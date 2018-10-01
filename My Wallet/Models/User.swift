@@ -7,16 +7,20 @@
 //
 
 import Foundation
+import Realm
+import RealmSwift
 
 
-class User {
-    
+@objcMembers class User  {
     private let civility: civility
     private var firstName: String
     private var lastName: String
-    private var email: String
-    private var phoneNumber: String
     private var accountLimit: accountLimit
+    private var email: String
+
+     dynamic var id = UUID().uuidString
+      dynamic  var password = ""
+     dynamic  var phoneNumber = ""
     
     init(civility: civility, firstName: String?, lastName: String?, email: String?, phoneNumber: String?, accountLimit: accountLimit) {
         self.civility = civility
@@ -26,6 +30,12 @@ class User {
         self.phoneNumber = phoneNumber ?? ""
         self.accountLimit = accountLimit
     }
+//
+//    init(phoneNumber: String, password: String) {
+//        self.phoneNumber = phoneNumber
+//        self.password = password
+//    }
+    
 
     // TO DO : Set getters and setters
  
@@ -59,18 +69,23 @@ class User {
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: email)
     }
+    
+    
+    
+    enum civility: String {
+        case mr = "Mr."
+        case mrs = "Mrs."
+        
+    }
+    
+    enum accountLimit: Int {
+        case min = 200
+        case avg = 5000
+        case max = 20000
+    }
+
 }
 
 
 
-enum accountLimit: Int {
-    case min = 200
-    case avg = 5000
-    case max = 20000
-}
 
-enum civility: String {
-    case mr = "Mr."
-    case mrs = "Mrs."
-
-}
