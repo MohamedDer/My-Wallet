@@ -1,16 +1,20 @@
-<h1 align="center"> iOS Login SignUp Form  </h1>
+<h1 align="center"> My Wallet :moneybag: </h1>
 
 Description
 ------
-The following project is an elegant login and signup template for iOS devices. It's a boilerplate code provided with field verification, error handling and smooth animations. It's a part of a digital wallet app I'm currently working on.
+My wallet is an elegant digital wallet app template. It is provided with a boilerplate code for login, signup, dashboard and profile code. The forms contain local field verification for lenght and email format. You can use it as a foundation for your projects, for it is a simple, readable and -I wish- structured code.
+
+Network layers and the full architecture are not implemented in this public repo but there some helpful comments to guide every newbie. 
 
 
 
 Demo
 ------
- <p align="center"> 
-<img src="https://github.com/MohamedDer/iOSLoginSignUpForm/blob/master/demo%20gif/demo.gif">
-</p>
+ <div align="center"> 
+<img src="https://github.com/MohamedDer/iOSLoginSignUpForm/blob/master/demo%20gif/logindemo.gif">
+    
+<img src="https://github.com/MohamedDer/iOSLoginSignUpForm/blob/master/demo%20gif/dashboarddemo.gif">
+</div>
  
 
 Used Libraries
@@ -19,6 +23,7 @@ Used Libraries
 - [IQKeyboardManager](https://github.com/hackiftekhar/IQKeyboardManager): Automaticly manage keyboard resign
 - [JVFloatLabeledTextField](https://github.com/jverdi/JVFloatLabeledTextField): TextField with a customisable floating label
 - [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView): Sweet loading animations
+- Other pods to manage persistance -Realm-, network calls -Alamofire-, data mapping,...
  
 
 
@@ -27,3 +32,5 @@ Developed by
 [Mohamed Derkaoui](about.me/mohamed-derkaoui):bowtie: -  medder12@gmail.com
 
 Please, feel free to contact me / open a PR for any contribution or improvement. 
+
+ <p align="center"> <a href="paypal.me/mderkaoui">  Buy me a :coffee:  </a> </p>
