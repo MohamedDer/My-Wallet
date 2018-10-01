@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kdX-eD-vDm">
-                                <rect key="frame" x="0.0" y="64" width="375" height="621"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lrf-fa-eUP">
-                                <rect key="frame" x="20" y="103" width="335" height="479"/>
+                                <rect key="frame" x="20" y="100" width="335" height="467"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="hj6-ei-oTN">
-                                        <rect key="frame" x="5" y="30" width="325" height="431"/>
+                                        <rect key="frame" x="5" y="30" width="325" height="420.5"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Fra-2U-xwm">
                                                 <rect key="frame" x="0.0" y="0.0" width="325" height="130"/>
@@ -33,10 +33,14 @@
                                                 </constraints>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="748" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="h67-Pj-7MY">
-                                                <rect key="frame" x="0.0" y="180" width="325" height="251"/>
+                                                <rect key="frame" x="0.0" y="180" width="325" height="240.5"/>
                                                 <subviews>
+                                                    <view contentMode="scaleToFill" horizontalHuggingPriority="245" verticalHuggingPriority="246" horizontalCompressionResistancePriority="247" verticalCompressionResistancePriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="Qmg-Gz-lla">
+                                                        <rect key="frame" x="22.5" y="0.0" width="280" height="36"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="boW-AG-P3p" userLabel="form">
-                                                        <rect key="frame" x="22.5" y="0.0" width="280" height="86"/>
+                                                        <rect key="frame" x="22.5" y="41" width="280" height="86"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M15-eY-zSb" userLabel="phoneNumber">
                                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="36"/>
@@ -97,15 +101,18 @@
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="86" id="8kA-yp-qo3"/>
+                                                        </constraints>
                                                     </stackView>
-                                                    <view contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="247" verticalCompressionResistancePriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="Qmg-Gz-lla">
-                                                        <rect key="frame" x="22.5" y="91" width="280" height="65"/>
+                                                    <view contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="242" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="DUe-82-sOO">
+                                                        <rect key="frame" x="22.5" y="132" width="280" height="13.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="l9T-uh-u4Y" userLabel="buttons">
-                                                        <rect key="frame" x="0.0" y="161" width="325" height="90"/>
+                                                        <rect key="frame" x="0.0" y="150.5" width="325" height="90"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeY-Gx-07x" userLabel="LoginButton">
+                                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeY-Gx-07x" userLabel="LoginButton">
                                                                 <rect key="frame" x="22.5" y="0.0" width="280" height="40"/>
                                                                 <color key="backgroundColor" red="0.95262928300000005" green="0.7225681035" blue="0.13330413529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
@@ -143,7 +150,7 @@
                                                 <constraints>
                                                     <constraint firstItem="boW-AG-P3p" firstAttribute="width" secondItem="VeY-Gx-07x" secondAttribute="width" id="ZQf-G7-eoO"/>
                                                     <constraint firstAttribute="trailing" secondItem="l9T-uh-u4Y" secondAttribute="trailing" id="eGl-LR-2sb"/>
-                                                    <constraint firstItem="Qmg-Gz-lla" firstAttribute="height" secondItem="h67-Pj-7MY" secondAttribute="height" multiplier="0.26" id="g5T-Xu-kUj"/>
+                                                    <constraint firstItem="Qmg-Gz-lla" firstAttribute="height" secondItem="h67-Pj-7MY" secondAttribute="height" multiplier="0.15" id="g5T-Xu-kUj"/>
                                                     <constraint firstItem="l9T-uh-u4Y" firstAttribute="leading" secondItem="h67-Pj-7MY" secondAttribute="leading" id="zIF-k3-vOq"/>
                                                 </constraints>
                                             </stackView>
@@ -159,7 +166,7 @@
                                 </constraints>
                             </view>
                             <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2uw-rv-ZnT" userLabel="Alpha View 2">
-                                <rect key="frame" x="20" y="651" width="335" height="35"/>
+                                <rect key="frame" x="20" y="633" width="335" height="35"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWZ-fV-3uv">
                                         <rect key="frame" x="87" y="3" width="161" height="25"/>
@@ -187,7 +194,6 @@
                             <constraint firstItem="2uw-rv-ZnT" firstAttribute="centerX" secondItem="Lrf-fa-eUP" secondAttribute="centerX" id="3b4-Qi-Avd"/>
                             <constraint firstAttribute="trailing" secondItem="Lrf-fa-eUP" secondAttribute="trailing" constant="20" id="CRM-MY-SW1"/>
                             <constraint firstItem="kdX-eD-vDm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MZr-H8-ynm"/>
-                            <constraint firstItem="Lrf-fa-eUP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PmK-33-eAh"/>
                             <constraint firstItem="Lrf-fa-eUP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ux2-xe-eJE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kdX-eD-vDm" secondAttribute="bottom" id="W9D-js-Teg"/>
                             <constraint firstItem="2uw-rv-ZnT" firstAttribute="width" secondItem="Lrf-fa-eUP" secondAttribute="width" id="Y3T-jV-fuM"/>
