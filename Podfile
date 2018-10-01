@@ -6,11 +6,23 @@ target 'My Wallet' do
   use_frameworks!
 
 	# Pods for My Wallet
-
+	
+	#UI UTILITIES
 	pod 'JVFloatLabeledTextField'
 	pod 'IQKeyboardManager'
 	pod 'NVActivityIndicatorView'
 
+	
+
+	# NETWORKING 
+	pod 'Alamofire'
+
+	# DATA UTILITIES
+	pod 'SwiftyJSON'
+	pod 'ObjectMapper' 
+
+	# STORAGE
+	pod 'RealmSwift'	
 
 
 end

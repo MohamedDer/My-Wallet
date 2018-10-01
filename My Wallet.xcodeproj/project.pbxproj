@@ -21,6 +21,10 @@
 		6378924021593CC200513D84 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6378923F21593CC200513D84 /* User.swift */; };
 		63952B17215BD50500635935 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63952B16215BD50500635935 /* SettingsViewController.swift */; };
 		63952B19215BF40100635935 /* transactiontableViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63952B18215BF40100635935 /* transactiontableViewCellTableViewCell.swift */; };
+		639C3B55215D3183006CD03D /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C3B54215D3183006CD03D /* SpinnerView.swift */; };
+		63F712EB215E704A001367F6 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F712EA215E704A001367F6 /* LoginPresenter.swift */; };
+		63F712ED215E7057001367F6 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F712EC215E7057001367F6 /* LoginUseCase.swift */; };
+		63F712EF215E732A001367F6 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F712EE215E732A001367F6 /* Session.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +45,10 @@
 		6378923F21593CC200513D84 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		63952B16215BD50500635935 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		63952B18215BF40100635935 /* transactiontableViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transactiontableViewCellTableViewCell.swift; sourceTree = "<group>"; };
+		639C3B54215D3183006CD03D /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		63F712EA215E704A001367F6 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		63F712EC215E7057001367F6 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		63F712EE215E732A001367F6 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		CAE0518F0B49C4390F706263 /* Pods-My Wallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Wallet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Wallet/Pods-My Wallet.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +129,7 @@
 			children = (
 				63776BC0215A8A9E003D4F41 /* iconCollectionViewCell.swift */,
 				63952B18215BF40100635935 /* transactiontableViewCellTableViewCell.swift */,
+				639C3B54215D3183006CD03D /* SpinnerView.swift */,
 			);
 			path = "Reusable Views";
 			sourceTree = "<group>";
@@ -129,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				63359DCF2154F40700520A65 /* LoginViewController.swift */,
+				63F712EA215E704A001367F6 /* LoginPresenter.swift */,
+				63F712EC215E7057001367F6 /* LoginUseCase.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -146,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				6378923F21593CC200513D84 /* User.swift */,
+				63F712EE215E732A001367F6 /* Session.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,15 +266,25 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-My Wallet/Pods-My Wallet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JVFloatLabeledTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -313,11 +335,15 @@
 				63776BBE215A72AE003D4F41 /* dashboardViewController.swift in Sources */,
 				63952B19215BF40100635935 /* transactiontableViewCellTableViewCell.swift in Sources */,
 				63776BC1215A8A9E003D4F41 /* iconCollectionViewCell.swift in Sources */,
+				63F712EB215E704A001367F6 /* LoginPresenter.swift in Sources */,
 				6378923B21593C0200513D84 /* SignUpForm.swift in Sources */,
 				63359DD02154F40700520A65 /* LoginViewController.swift in Sources */,
+				63F712EF215E732A001367F6 /* Session.swift in Sources */,
+				639C3B55215D3183006CD03D /* SpinnerView.swift in Sources */,
 				6378924021593CC200513D84 /* User.swift in Sources */,
 				63359DCE2154F40700520A65 /* AppDelegate.swift in Sources */,
 				63952B17215BD50500635935 /* SettingsViewController.swift in Sources */,
+				63F712ED215E7057001367F6 /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,10 +493,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7P43UR5T5;
 				INFOPLIST_FILE = "My Wallet/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "medder.My-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -486,10 +509,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7P43UR5T5;
 				INFOPLIST_FILE = "My Wallet/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "medder.My-Wallet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

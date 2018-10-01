@@ -35,9 +35,6 @@ class DashboardViewController: UIViewController, UICollectionViewDelegate, UICol
         ovalView.layer.cornerRadius = ovalView.frame.width/6
         ovalView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
 
-        
-
-        
         profileImageView.layer.cornerRadius = profileImageView.frame.width/2
         
         let attrString = NSMutableAttributedString(string: "Your balance is  ",attributes: [NSAttributedString.Key.font: UIFont(name: "Apple SD Gothic neo", size: 20)!])
