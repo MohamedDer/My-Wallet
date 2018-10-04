@@ -29,8 +29,8 @@ Used Libraries
 
 Developed by
 ------
-[Mohamed Derkaoui](about.me/mohamed-derkaoui):bowtie: -  medder12@gmail.com
+[Mohamed Derkaoui](https://about.me/mohamed-derkaoui):bowtie: -  medder12@gmail.com
 
 Please, feel free to contact me / open a PR for any contribution or improvement. 
 
- <p align="center"> <a href="paypal.me/mderkaoui">  Buy me a :coffee:  </a> </p>
+ <p align="center"> <a href="https://paypal.me/mderkaoui">  Buy me a :coffee:  </a> </p>
