@@ -2,7 +2,7 @@
 
 Description
 ------
-My wallet is an elegant digital wallet app template. It is provided with a boilerplate code for login, signup, dashboard and profile code. The forms contain local field verification for lenght and email format. You can use it as a foundation for your projects, for it is a simple, readable and -I wish- structured code.
+My wallet is an elegant digital wallet app template. It is provided with a boilerplate code for login, signup, dashboard and profile code. The forms contain local field verification for lenght and email format. You can use it as a foundation for your projects, as it is a simple, customizable, readable and -I wish- structured code.
 
 Network layers and the full architecture are not implemented in this public repo but there some helpful comments to guide every newbie. 
 
@@ -10,7 +10,7 @@ Network layers and the full architecture are not implemented in this public repo
 
 Demo
 ------
- <div align="center"> 
+<div align="center"> 
 <img src="https://github.com/MohamedDer/iOSLoginSignUpForm/blob/master/demo%20gif/logindemo.gif">
     
 <img src="https://github.com/MohamedDer/iOSLoginSignUpForm/blob/master/demo%20gif/dashboarddemo.gif">
